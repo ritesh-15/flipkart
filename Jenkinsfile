@@ -25,6 +25,8 @@ pipeline {
         stage('Run container') {
             steps {
                 echo "running container..."
+                sh "docker compose pull"
+                sh "docker compose up --build --force-recreate -d"
             }
         }
     }

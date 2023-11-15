@@ -7,7 +7,7 @@ services:
     ports:
       - 80:9000
     environment:
-      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
-      - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
-      - MONGO_URL=${MONGO_URL}
-      - HOST=${HOST}
+      - ACCESS_TOKEN_SECRET=f4fdf5df
+      - REFRESH_TOKEN_SECRET=4fdf5d
+      - MONGO_URL=""
+      - HOST=0.0.0.0
