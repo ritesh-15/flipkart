@@ -10,6 +10,7 @@ pipeline {
         stage('Build docker image') {
             steps {
                 echo "building image..."
+                echo "now lets test docker image build"
             }
         }
         stage('Push image to docker hub') {
