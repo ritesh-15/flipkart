@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  web:
+    image: riteshk15/flipkart-server:latest
+    container_name: flipkart-container
+    ports:
+      - 80:9000
+    environment:
+      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+      - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+      - MONGO_URL=${MONGO_URL}
+      - HOST=${HOST}
