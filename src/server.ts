@@ -30,7 +30,11 @@ app.use(
 const BASE_URL = "api/v1"
 
 app.get("/health", (req: Request, res: Response, next: NextFunction) => {
-  res.json({ ok: true, message: "health check successful!" })
+  res.json({
+    ok: true,
+    message: "health check successful ✅✅",
+    timestamp: new Date(),
+  })
 })
 
 app.use(`${BASE_URL}/auth`, authRouter)
