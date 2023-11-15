@@ -4,6 +4,7 @@ pipeline {
         stage('Pull code') {
             steps {
                 echo "pulling code..."
+                git branch: 'backend', url: 'https://github.com/ritesh-15/flipkart.git'
             }
         }
         stage('Build docker image') {
